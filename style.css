@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 700px;
+  padding: 30px;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-size: 45px;
+  margin-bottom: 35px;
+}
+
+.input-box {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+input {
+  width: 100%;
+  padding: 17px;
+  border-radius: 13px;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  background: #f2f2ff;
+}
+
+.input-box button {
+  padding: 0 30px;
+  border: none;
+  border-radius: 13px;
+  background: #3b2f63;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.input-box button:hover {
+  background: #241b3f;
+}
+
+.filters {
+  margin: 25px 0;
+}
+
+.filters button {
+  padding: 12px 25px;
+  margin: 5px;
+  border-radius: 25px;
+  border: 2px solid #ffffff80;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.filters button.active,
+.filters button:hover {
+  background: #7b4fd6;
+}
+
+#counter {
+  background: #ffffff25;
+  color: #222;
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+li {
+  background: white;
+  color: #333;
+  padding: 15px;
+  margin: 12px 0;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task-buttons button {
+  margin-left: 8px;
+  padding: 7px 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.done-btn {
+  background: #2ecc71;
+  color: white;
+}
+
+.delete-btn {
+  background: #e74c3c;
+  color: white;
+}
+
+.remove-all {
+  margin-top: 25px;
+  padding: 12px 25px;
+  border-radius: 10px;
+  border: 2px solid red;
+  background: transparent;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.remove-all:hover {
+  background: red;
+  color: white;
+}
+
+.empty {
+  color: #ddd;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  .input-box {
+    flex-direction: column;
+  }
+
+  .input-box button {
+    padding: 15px;
+  }
+}
