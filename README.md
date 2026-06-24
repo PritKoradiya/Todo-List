@@ -31,7 +31,7 @@ A simple and responsive To-Do List web application built using HTML, CSS, and Ja
 
 1. Download or clone this repository
 2. Open `index.html`
-3. Start managing your tasks
+3. Start managing your tasks which you want to do
 
 ## 👨‍💻 Author
 
